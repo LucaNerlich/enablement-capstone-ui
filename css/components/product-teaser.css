@@ -7,6 +7,10 @@
     .product-teaser {
         max-width: 350px;
 
+        button {
+            margin-left: 1rem;
+        }
+
         img {
             width: 350px;
             height: 400px;

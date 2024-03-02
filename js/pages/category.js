@@ -8,7 +8,7 @@ async function createCategory(main) {
 
     // Setup Category Headline
     const headline = main.querySelector("#category-main .content h1");
-    headline.textContent = "All " + category + " products"
+    headline.textContent = isSingle ? "All " + category + " products" : "All products"
 
     // https://fakestoreapi.com/docs
     // https://github.com/keikaavousi/fake-store-api/issues/46
@@ -40,6 +40,12 @@ async function createProductTeaser(product) {
     const price = document.createElement("span");
     price.textContent = "$" + product.price;
     productTeaser.appendChild(price);
+
+    // create "add to basket button
+    const button = document.createElement("button");
+    button.textContent = "Add to Basket";
+    button.setAttribute("product-id", product.id);
+    productTeaser.appendChild(button);
 
     return productTeaser;
 }
