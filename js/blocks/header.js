@@ -8,14 +8,14 @@ function createHeader(header) {
         <li class="logo-name">VENIA</li>
         <li>
             <ul>
-                <li>Home</li>
-                <li>Women</li>
-                <li>Men</li>
-                <li>Electronics</li>
-                <li>Jewellery</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/pages/category.html?category=women">Women</a></li>
+                <li><a href="/pages/category.html?category=men">Men</a></li>
+                <li><a href="/pages/category.html?category=electronics">Electronics</a></li>
+                <li><a href="/pages/category.html?category=jewellery">Jewellery</a></li>
             </ul>
         </li>
-        <li> BASKET</li>
+        <li><a href="/pages/basket.html">BASKET</a></li>
     </ul>
   `;
 }
