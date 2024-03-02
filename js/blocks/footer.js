@@ -39,7 +39,7 @@ function createFooter(footer) {
             </div>
       </div>
       <div class="footer-company">
-            <p>VENIA</p>
+            <p class="logo-name">VENIA</p>
             <p>© Company Name Address Ave, City Name, State ZIP</p>
              <div>
                 <p>Terms of Use</p>
