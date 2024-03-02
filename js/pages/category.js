@@ -2,27 +2,14 @@ import {loadData} from "../api.js";
 import {capitalize} from "../util.js";
 
 async function createCategory(main) {
-    const category = new URLSearchParams(window.location.search).getAll("category");
-    if (!category) {
-        console.error("No category found for product page.");
-    }
-    const isSingle = category.length === 1;
-    document.title = !isSingle ? "Categories" : capitalize(category[0]);
+    const category = new URLSearchParams(window.location.search).get("category");
+    const isSingle = category !== null;
+    document.title = !isSingle ? "Categories" : capitalize(category);
 
-    const categories = await loadData('/assets/categories.json');
-    const categoryData = isSingle ? {[category]: categories[category]} : categories;
-
-    // loop over categories and return all aggreagted product ids
-    const productIds = Object.values(categoryData).reduce((acc, category) => {
-        if (category.products && Array.isArray(category.products)) {
-            return acc.concat(category.products);
-        } else {
-            return acc;
-        }
-    }, []);
-    const products = await loadData('/assets/products.json');
-    const matchingProducts = products.filter(item => productIds.includes(item.id));
-    console.log("matchingProducts", matchingProducts);
+    // https://fakestoreapi.com/docs
+    const url = isSingle ? "https://fakestoreapi.com/products/category/" + category : "https://fakestoreapi.com/products"
+    const products = await loadData(url);
+    console.log("products", products);
 }
 
 createCategory(document.getElementById("category-main")).then(r => {

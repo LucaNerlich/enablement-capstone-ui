@@ -9,11 +9,11 @@ function createHeader(header) {
         <li>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/pages/category.html?category=women">Women</a></li>
-                <li><a href="/pages/category.html?category=men">Men</a></li>
+                <li><a href="/pages/category.html?category=women's%20clothing">Women</a></li>
+                <li><a href="/pages/category.html?category=men's%20clothing">Men</a></li>
                 <li><a href="/pages/category.html?category=electronics">Electronics</a></li>
-                <li><a href="/pages/category.html?category=jewellery">Jewellery</a></li>
-                <li><a href="/pages/category.html?category=men&category=women&category=electronics&category=jewellery">All</a></li>
+                <li><a href="/pages/category.html?category=jewelery">Jewelery</a></li>
+                <li><a href="/pages/category.html">All</a></li>
             </ul>
         </li>
         <li><a href="/pages/basket.html">BASKET</a></li>
