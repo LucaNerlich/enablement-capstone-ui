@@ -10,6 +10,7 @@ footer {
 
             .footer-links_column {
                 margin-top: 1rem;
+                max-width: 400px;
 
                 ul {
                     list-style: none;

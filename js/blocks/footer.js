@@ -44,6 +44,7 @@ function createFooter(footer) {
              <div>
                 <p>Terms of Use</p>
                 <p>Privacy Policy</p>
+                <button id="theme-switcher">Switch Theme</button>
             </div>
       </div>
 </div>
