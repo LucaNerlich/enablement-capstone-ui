@@ -1,13 +1,13 @@
 {
-    "name": "nobuild-boilerplate",
+    "name": "enablement-capstone-ui",
     "version": "0.0.1",
-    "description": "",
-    "private": true,
+    "description": "2024 EDS Enablement - Capstone UI",
+    "private": false,
     "keywords": [
         ""
     ],
-    "license": "",
-    "author": "",
+    "license": "MIT",
+    "author": "Luca Nerlich",
     "scripts": {
         "dev": "nodemon dev-server.js"
     },
