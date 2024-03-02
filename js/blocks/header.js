@@ -5,7 +5,7 @@
 function createHeader(header) {
     header.innerHTML = `
       <ul>
-        <li class="logo-name">VENIA</li>
+        <li class="logo-name"><a href="/">VENIA</a></li>
         <li>
             <ul>
                 <li><a href="/">Home</a></li>

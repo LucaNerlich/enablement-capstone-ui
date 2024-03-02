@@ -15,5 +15,9 @@
 
     .hero-img {
         width: 50%;
+
+        img {
+            border-radius: 0;
+        }
     }
 }
