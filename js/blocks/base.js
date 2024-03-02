@@ -1,10 +1,12 @@
+import {createHeader} from "./header.js";
+
 /**
  * Loads a block named 'header' into header
  * @param {Element} header header element
  * @returns {Promise}
  */
 async function loadHeader(header) {
-    return document.createElement("header");
+    return createHeader(header);
 }
 
 /**

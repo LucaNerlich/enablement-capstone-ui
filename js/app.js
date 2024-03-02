@@ -1,6 +1,5 @@
 import {loadFooter, loadHeader, setupTheme} from "./blocks/base.js";
 
-
 /**
  * Loads everything needed for the initial page.
  * @param {Document} doc The container element
