@@ -12,3 +12,7 @@
 /* Pages */
 @import url('pages/home.css');
 
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
