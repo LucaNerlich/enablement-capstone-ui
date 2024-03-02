@@ -8,7 +8,8 @@ async function createCategory(main) {
 
     // https://fakestoreapi.com/docs
     // https://github.com/keikaavousi/fake-store-api/issues/46
-    const url = isSingle ? "https://fakestoreapi.com/products/category/" + category : "https://fakestoreapi.com/products"
+    // downloaded all to serve from local, except for images
+    const url = isSingle ? "/assets/products/" + category + ".json" : "/assets/products/all.json"
     const products = await loadData(url);
     console.log("products", products);
 }
