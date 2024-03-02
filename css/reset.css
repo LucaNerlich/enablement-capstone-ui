@@ -34,6 +34,34 @@ ul {
     isolation: isolate;
 }
 
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize 'line-height'. Cannot be changed from 'normal' in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable 'input' types in iOS */
+    -webkit-appearance: none;
+
+    /* Remove the inheritance of text transform in Firefox */
+    text-transform: none;
+
+    /* Remove tap highlight in Safari */
+    -webkit-tap-highlight-color: transparent;
+}
+
 /*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
