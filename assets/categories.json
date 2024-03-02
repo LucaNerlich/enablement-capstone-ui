@@ -1,10 +1,26 @@
 {
     "women": {
+        "title": "Women",
+        "products": [
+            1
+        ]
     },
     "men": {
+        "title": "Men",
+        "products": [
+            2
+        ]
     },
     "electronics": {
+        "title": "Electronics",
+        "products": [
+            3
+        ]
     },
     "jewellery": {
+        "title": "Jewellery",
+        "products": [
+            4
+        ]
     }
 }

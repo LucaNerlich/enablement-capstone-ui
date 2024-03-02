@@ -1,10 +1,26 @@
-{
-    "women": {
+[
+    {
+        "id": 1,
+        "category": "women",
+        "title": "",
+        "image": ""
     },
-    "men": {
+    {
+        "id": 2,
+        "category": "men",
+        "title": "",
+        "image": ""
     },
-    "electronics": {
+    {
+        "id": 3,
+        "category": "electronics",
+        "title": "",
+        "image": ""
     },
-    "jewellery": {
+    {
+        "id": 4,
+        "category": "jewellery",
+        "title": "",
+        "image": ""
     }
-}
+]
