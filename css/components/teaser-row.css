@@ -5,9 +5,6 @@
     justify-content: center;
     gap: 1rem;
 
-    /* Overlap Effect */
-    margin-top: -32px;
-
     .teaser-row-item {
         /* Zoom images and force to square */
 

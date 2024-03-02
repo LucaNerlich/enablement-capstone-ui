@@ -1,0 +1,5 @@
+.content-main {
+    /* Overlap Effect + center div */
+    margin: -32px auto 0;
+    max-width: 1200px;
+}

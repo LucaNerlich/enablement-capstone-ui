@@ -8,3 +8,7 @@
 @import url('components/hero.css');
 @import url('components/footer.css');
 @import url('components/teaser-row.css');
+
+/* Pages */
+@import url('pages/home.css');
+
