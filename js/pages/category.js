@@ -7,6 +7,7 @@ async function createCategory(main) {
     document.title = !isSingle ? "Categories" : capitalize(category);
 
     // https://fakestoreapi.com/docs
+    // https://github.com/keikaavousi/fake-store-api/issues/46
     const url = isSingle ? "https://fakestoreapi.com/products/category/" + category : "https://fakestoreapi.com/products"
     const products = await loadData(url);
     console.log("products", products);
