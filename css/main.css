@@ -4,9 +4,10 @@
 @import url('style.css');
 
 /* Components */
+@import url('components/footer.css');
 @import url('components/header.css');
 @import url('components/hero.css');
-@import url('components/footer.css');
+@import url('components/product-teaser.css');
 @import url('components/teaser-cta.css');
 @import url('components/teaser-row.css');
 

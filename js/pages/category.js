@@ -30,6 +30,7 @@ async function createProductTeaser(product) {
     const image = document.createElement("img");
     image.src = product.image;
     image.alt = product.title;
+    image.loading = "lazy";
     productTeaser.appendChild(image);
 
     const title = document.createElement("h3");

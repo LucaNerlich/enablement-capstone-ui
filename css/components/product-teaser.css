@@ -1,0 +1,16 @@
+#products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .product-teaser {
+        max-width: 350px;
+
+        img {
+            width: 350px;
+            height: 400px;
+            object-fit: contain;
+        }
+    }
+}
