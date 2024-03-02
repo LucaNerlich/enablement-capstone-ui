@@ -23,4 +23,4 @@ https://enablement-capstone-ui.vercel.app/
 
 ## Time spent
 
-- 2024-02-034h
+- 2024-02-03 6h
