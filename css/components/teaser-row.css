@@ -1,0 +1,28 @@
+.teaser-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    /* TODO create "overlap" effect */
+    margin: 1rem 0;
+
+
+    .teaser-row-item {
+        /* Zoom images and force to square */
+
+        div.teaser-row-item_img {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
