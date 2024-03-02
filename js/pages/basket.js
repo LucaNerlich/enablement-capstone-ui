@@ -2,6 +2,6 @@ async function createBasket(main) {
 
 }
 
-export {
-    createBasket
-}
+createBasket(document.getElementById("basket-main")).then(r => {
+    console.debug("Basket loaded.")
+});
