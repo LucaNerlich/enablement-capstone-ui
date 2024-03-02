@@ -1,4 +1,5 @@
 import {createHeader} from "./header.js";
+import {createFooter} from "./footer.js";
 
 /**
  * Loads a block named 'header' into header
@@ -15,14 +16,12 @@ async function loadHeader(header) {
  * @returns {Promise}
  */
 async function loadFooter(footer) {
-    return document.createElement("footer");
+    return createFooter(footer);
 }
 
 async function setupTheme(themeSwitcher) {
     // set default theme
     document.documentElement.setAttribute('data-theme', 'light');
-    console.log("document.documentElement", document.documentElement);
-
 
     // setup theme-switcher button
     if (themeSwitcher) {
