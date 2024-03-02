@@ -6,9 +6,10 @@
     .hero-text {
         width: 50%;
         background-color: var(--color-gray-d1);
+        padding: 4rem 4rem;
 
         > * {
-            margin: 1rem 1rem;
+            margin-bottom: 1rem;
         }
     }
 

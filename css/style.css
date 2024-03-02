@@ -4,6 +4,10 @@ button {
     padding: 0 1rem;
 }
 
+section {
+    margin-bottom: 4rem;
+}
+
 .logo-name {
     letter-spacing: 0.5rem;
 }
