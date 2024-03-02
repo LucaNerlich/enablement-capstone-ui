@@ -34,6 +34,10 @@ ul {
     isolation: isolate;
 }
 
+a {
+    color: inherit;
+}
+
 button {
     border: none;
     margin: 0;
