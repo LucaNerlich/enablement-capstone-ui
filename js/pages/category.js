@@ -10,6 +10,8 @@ async function createCategory(main) {
     const headline = main.querySelector("#category-main .content h1");
     headline.textContent = isSingle ? "All " + category + " products" : "All products"
 
+    // TODO load data non-blocking somewhere else
+
     // https://fakestoreapi.com/docs
     // https://github.com/keikaavousi/fake-store-api/issues/46
     // downloaded all to serve from local, except for images

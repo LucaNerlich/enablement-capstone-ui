@@ -1,14 +1,14 @@
 import {loadFooter, loadHeader, setupTheme} from "./blocks/base.js";
 
+// Adapted from
+// https://github.com/adobe/aem-boilerplate/blob/main/scripts/scripts.js
+
 /**
  * Loads everything needed for the initial page.
  * @param {Document} doc The container element
  */
 async function loadInitial(doc) {
     document.documentElement.lang = 'en';
-    const main = doc.querySelector('main');
-    if (main) {
-    }
 
     await loadHeader(doc.querySelector('header'));
     await loadFooter(doc.querySelector('footer'));
@@ -35,7 +35,6 @@ function loadLazy(doc) {
  * without impacting the user experience.
  */
 function loadDelayed() {
-    // eslint-disable-next-line import/no-cycle
     window.setTimeout(() => import('./delayed.js'), 3000);
     // load anything that can be postponed to the latest here
 }
