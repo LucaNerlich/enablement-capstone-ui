@@ -6,13 +6,12 @@
     gap: 1rem;
 
     .teaser-row-item {
-        /* Zoom images and force to square */
-
         div.teaser-row-item_img {
             width: 200px;
             height: 200px;
             overflow: hidden;
             box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
         }
 
         img {
