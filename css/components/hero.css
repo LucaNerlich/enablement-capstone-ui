@@ -3,6 +3,10 @@
     flex-direction: row;
     flex-wrap: wrap;
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
     .hero-text {
         width: 50%;
         background-color: var(--color-gray-d1);
@@ -11,6 +15,10 @@
         > * {
             margin-bottom: 1rem;
         }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     .hero-img {
@@ -18,6 +26,10 @@
 
         img {
             border-radius: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
         }
     }
 }

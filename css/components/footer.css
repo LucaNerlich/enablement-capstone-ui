@@ -1,6 +1,7 @@
 footer {
     margin-bottom: 1rem;
 
+
     .footer-wrapper {
         .footer-links {
             margin-top: 1rem;
@@ -20,6 +21,10 @@ footer {
                     list-style: none;
                 }
             }
+
+            @media screen and (max-width: 768px) {
+                padding: 0 1rem;
+            }
         }
 
         .footer-company {
@@ -38,6 +43,10 @@ footer {
                 justify-content: space-between;
                 gap: 1rem
             }
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 0 1rem;
         }
     }
 }
