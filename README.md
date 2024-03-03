@@ -9,7 +9,10 @@
 
 > Luca Nerlich
 
-https://enablement-capstone-ui.vercel.app/
+- https://enablement-capstone-ui.vercel.app/
+    - Free Hosting on Vercel
+- https://lucanerlich.github.io/enablement-capstone-ui/
+    - Free Hosting via GitHub Pages
 
 ## XD Designs
 
