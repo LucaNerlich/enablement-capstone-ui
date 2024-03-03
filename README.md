@@ -2,9 +2,9 @@
 
 <!-- TOC -->
 * [2024 EDS Enablement Capstone UI](#2024-eds-enablement-capstone-ui)
-    * [XD Designs](#xd-designs)
-    * [Todos](#todos)
-    * [Time spent](#time-spent)
+  * [XD Designs](#xd-designs)
+  * [Todos](#todos)
+  * [Time spent](#time-spent)
 <!-- TOC -->
 
 > Luca Nerlich
@@ -32,4 +32,9 @@ https://enablement-capstone-ui.vercel.app/
 
 ## Time spent
 
-- 2024-02-03 6h
+- 2024-03-02
+    - 6h
+    - Started with Project
+- 2024-03-03
+    - 0,5h
+    - Improved Responsiveness
