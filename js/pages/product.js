@@ -1,4 +1,3 @@
-import {loadData} from "../api.js";
 import {capitalize} from "../util.js";
 
 async function createProduct(main) {
@@ -8,9 +7,6 @@ async function createProduct(main) {
     }
 
     document.title = capitalize(product);
-
-    const products = await loadData('/assets/products.json');
-    console.log("products", products);
 }
 
 createProduct(document.getElementById("product-main")).then(r => {

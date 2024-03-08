@@ -29,9 +29,10 @@
 - [ ] Create single product page (by id)
 - [x] On "add to basket" button, write id to local storage
 - [x] have basket in header show a count of all ids in local storage
-- [ ] load all products by local-storage id in basket page
-- [ ] calculate and display basket sum
+- [x] load all products by local-storage id in basket page
+- [x] calculate and display basket sum
 - [ ] add button "remove from basket"
+- [ ] add 'change product amount' in basket
 - [ ] content overflows header
 
 ## Time spent

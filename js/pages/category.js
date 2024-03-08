@@ -18,7 +18,6 @@ async function createCategory(main) {
     // downloaded all to serve from local, except for images
     const url = isSingle ? "/assets/products/" + category + ".json" : "/assets/products/all.json"
     const products = await loadData(url);
-    console.log("products", products);
 
     const productsSection = document.getElementById("products");
     for (const product of products) {
