@@ -11,11 +11,8 @@ async function createBasket(main) {
         refreshBasketList();
     });
 
-
     const products = await loadData('/assets/products/all.json');
     refreshBasketList();
-    console.log("products", products);
-
 
     function refreshBasketList() {
         const basketProductList = main.querySelector('#basket-product-list');
@@ -34,7 +31,7 @@ async function createBasket(main) {
             basketProductList.appendChild(productListItem);
         })
 
-        basketSumElement.innerText = "$" + basketSum;
+        basketSumElement.innerText = "$" + Math.round(basketSum * 100) / 100
     }
 
 
