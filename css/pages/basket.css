@@ -38,30 +38,39 @@ tr {
     background-color: #fff;
 }
 
-tr > th:first-child,
-tr > th:last-child {
-    width: 20vw;
+tr > th:nth-child(2) {
+    width: 5%;
     text-align: center;
+
+    @media (width > 900) {
+        width: 10%;
+    }
 }
 
-tr > td:first-child,
+tr > th:last-child {
+    width: 20%;
+    text-align: center;
+
+    @media (width > 900) {
+        width: 10%;
+    }
+}
+
+tr > td:nth-child(2),
 tr > td:last-child {
     text-align: center;
 }
 
-/* Style for alternating rows */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Style for table cells */
 td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
 }
 
-/* Hover effect on table rows */
 tr:hover {
     background-color: #ccc;
 }

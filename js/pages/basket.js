@@ -29,8 +29,8 @@ async function createBasket(main) {
             const itemSum = matchedProduct.price * product.count;
             basketSum += itemSum;
             productListItem.innerHTML = `
-                <td>${product.count}</td>
                 <td><strong>${shortenText(matchedProduct.title, 55)}</strong></td>
+                <td>${product.count}</td>
                 <td>$${itemSum}</td>
             `
             basketProductList.appendChild(productListItem);
