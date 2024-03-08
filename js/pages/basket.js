@@ -26,10 +26,11 @@ async function createBasket(main) {
         basketCount.forEach(product => {
             const productListItem = document.createElement('tr');
             const matchedProduct = getProductById(product.id, products);
+            console.log("matchedProduct", matchedProduct);
             const itemSum = matchedProduct.price * product.count;
             basketSum += itemSum;
             productListItem.innerHTML = `
-                <td><strong>${shortenText(matchedProduct.title, 55)}</strong></td>
+                <td><span><img loading="lazy" src=${matchedProduct.image} alt=${matchedProduct.title}></span><strong>${shortenText(matchedProduct.title, 55)}</strong></td>
                 <td>${product.count}</td>
                 <td>$${itemSum}</td>
             `

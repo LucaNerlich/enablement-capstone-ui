@@ -38,6 +38,15 @@ tr {
     background-color: #fff;
 }
 
+tr > td > span > img {
+    display: inline-block;
+    margin-right: 1rem;
+    max-width: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 2px;
+}
+
+
 tr > th:nth-child(2) {
     width: 5%;
     text-align: center;
