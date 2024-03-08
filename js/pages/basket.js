@@ -30,8 +30,8 @@ async function createBasket(main) {
             basketSum += itemSum;
             productListItem.innerHTML = `
                 <td>${product.count}</td>
-                <td><strong>${shortenText(matchedProduct.title, 25)}</strong></td>
-                <td>| $${itemSum}</td>
+                <td><strong>${shortenText(matchedProduct.title, 55)}</strong></td>
+                <td>$${itemSum}</td>
             `
             basketProductList.appendChild(productListItem);
         })
