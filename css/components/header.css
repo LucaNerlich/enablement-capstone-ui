@@ -9,47 +9,80 @@ header {
     [data-theme="dark"] {
         color: #000000;
     }
+}
 
-    ul {
-        list-style: none;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mobile-nav {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+
+    .mobile-nav a {
+        padding: 10px;
+        display: block;
+    }
+
+    .menu-container.active .mobile-nav {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        li {
-            ul {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                gap: 1rem;
-            }
-        }
-
-        li#basket-badge {
-            color: black;
-
-            a > button {
-                text-decoration: none;
-            }
-        }
-
-        li:first-child {
-            padding-left: 4rem;
-        }
-
-        li:last-child {
-            padding-right: 4rem;
-        }
-
-        @media screen and (max-width: 768px) {
-            li:first-child {
-                padding-left: 1rem;
-            }
-
-            li:last-child {
-                padding-right: 1rem;
-            }
-        }
     }
 }
