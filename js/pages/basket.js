@@ -14,7 +14,8 @@ async function createBasket(main) {
     refreshBasketList();
 
     function refreshBasketList() {
-        const basketProductList = main.querySelector('#basket-product-list');
+        const basketProductList = main.querySelector('#basket-product-list > tbody');
+
         // Reset table
         resetBasketTable(basketProductList);
 
