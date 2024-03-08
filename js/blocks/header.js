@@ -1,3 +1,5 @@
+import {updateBadge} from "../basket.js";
+
 /**
  * Loads a block named 'header' into header
  * @param {Element} header header element
@@ -23,6 +25,8 @@ function createHeader(header) {
         </li>
     </ul>
   `;
+
+    updateBadge();
 }
 
 export {

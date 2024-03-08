@@ -25,7 +25,7 @@
 
 ## Todos
 
-- [ ] Make the product fetchs not render-blocking
+- [x] Make the product fetchs not render-blocking
 - [ ] Create single product page (by id)
 - [x] On "add to basket" button, write id to local storage
 - [x] have basket in header show a count of all ids in local storage
