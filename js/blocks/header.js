@@ -16,7 +16,11 @@ function createHeader(header) {
                 <li><a href="/pages/category.html">All</a></li>
             </ul>
         </li>
-        <li><a href="/pages/basket.html">BASKET</a></li>
+        <li id="basket-badge">
+            <button>
+                <a href="/pages/basket.html">BASKET</a>
+            </button>
+        </li>
     </ul>
   `;
 }

@@ -1,5 +1,6 @@
 import {loadData} from "../api.js";
 import {capitalize} from "../util.js";
+import {addToBasket} from "../basket.js";
 
 async function createCategory(main) {
     const category = new URLSearchParams(window.location.search).get("category");
@@ -47,6 +48,7 @@ async function createProductTeaser(product) {
     const button = document.createElement("button");
     button.textContent = "Add to Basket";
     button.setAttribute("product-id", product.id);
+    button.addEventListener('click', () => addToBasket(product.id))
     productTeaser.appendChild(button);
 
     return productTeaser;
