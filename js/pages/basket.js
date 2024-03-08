@@ -26,7 +26,6 @@ async function createBasket(main) {
         basketCount.forEach(product => {
             const productListItem = document.createElement('tr');
             const matchedProduct = getProductById(product.id, products);
-            console.log("matchedProduct", matchedProduct);
             const itemSum = matchedProduct.price * product.count;
             basketSum += itemSum;
             productListItem.innerHTML = `
@@ -50,7 +49,7 @@ async function createBasket(main) {
     }
 
     function getProductById(productId, products) {
-        return products.find(p => p.id === productId);
+        return products?.find(p => p.id === productId);
     }
 }
 
