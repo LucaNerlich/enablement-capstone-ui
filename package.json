@@ -9,11 +9,10 @@
     "license": "MIT",
     "author": "Luca Nerlich",
     "scripts": {
-        "dev": "nodemon dev-server.js"
+        "dev": "live-server"
     },
     "devDependencies": {
-        "live-server": "^1.2.2",
-        "nodemon": "^3.0.3"
+        "live-server": "^1.2.2"
     },
     "dependencies": {
         "koa": "^2.15.0",

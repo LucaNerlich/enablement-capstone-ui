@@ -47,7 +47,7 @@ function updateBadge() {
     const numProducts = loadBasket()?.length;
     const badge = document.getElementById("basket-badge").querySelector('a');
     if (badge) {
-        badge.innerText = (numProducts > 0) ? "Basket " + numProducts : "Basket";
+        badge.innerText = (numProducts > 0) ? "Basket (" + numProducts + ")" : "Basket";
     }
 }
 
