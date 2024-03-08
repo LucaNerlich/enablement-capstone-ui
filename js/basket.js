@@ -25,6 +25,32 @@ function loadBasket() {
 }
 
 /**
+ * Calculates the count of each unique number in an array and return a new
+ * array where each item is an object with the 'id' representing the unique
+ * number and 'count' from that number.
+ *
+ * @returns {{id: number, count: number}[]} - The result array consisting of
+ * objects with 'id' and 'count' properties.
+ */
+function loadBasketCount() {
+    const productIds = loadBasket();
+    const count = {};
+    for (let i = 0; i < productIds.length; i++) {
+        if (count[productIds[i]]) {
+            count[productIds[i]]++;
+        } else {
+            count[productIds[i]] = 1;
+        }
+    }
+
+    const result = [];
+    for (let num in count) {
+        result.push({id: parseInt(num), count: count[num]});
+    }
+    return result;
+}
+
+/**
  * @param {number[]} productIds
  */
 function saveBasket(productIds) {
@@ -54,6 +80,7 @@ function updateBadge() {
 export {
     addToBasket,
     loadBasket,
+    loadBasketCount,
     saveBasket,
     clearBasket,
     updateBadge
