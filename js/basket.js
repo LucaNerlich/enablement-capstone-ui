@@ -45,7 +45,7 @@ function clearBasket() {
  */
 function updateBadge() {
     const numProducts = loadBasket()?.length;
-    const badge = document.getElementById("basket-badge").querySelector('a');
+    const badge = document.getElementById("basket-badge").querySelector('a > button');
     if (badge) {
         badge.innerText = (numProducts > 0) ? "Basket (" + numProducts + ")" : "Basket";
     }

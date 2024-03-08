@@ -19,9 +19,11 @@ function createHeader(header) {
             </ul>
         </li>
         <li id="basket-badge">
-            <button>
-                <a href="/pages/basket.html">BASKET</a>
-            </button>
+            <a href="/pages/basket.html">
+                <button>
+                    BASKET
+                </button>
+            </a>
         </li>
     </ul>
   `;
