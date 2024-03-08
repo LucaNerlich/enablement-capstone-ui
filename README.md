@@ -43,3 +43,7 @@
 - 2024-03-03
     - 0,5h
     - Improved Responsiveness
+- 2024-03-08
+    - 3h
+    - basket via local-storage
+    - mobile header

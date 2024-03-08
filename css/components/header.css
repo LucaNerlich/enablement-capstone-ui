@@ -39,20 +39,21 @@ header {
     margin: 5px 0;
 }
 
-nav {
+header > div.menu-container > nav {
     display: flex;
     background-color: var(--color-brand);
 }
 
-ul {
+header > div.menu-container > nav > ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-li {
+header > div.menu-container > nav > ul > li {
     margin: 0 15px;
 }
 

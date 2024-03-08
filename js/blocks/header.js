@@ -15,7 +15,7 @@ async function createHeader(header) {
       </div>
       <nav class="mobile-nav">
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/"><strong>Home</strong></a></li>
           <li><a href="/pages/category.html?category=women">Women</a></li>
           <li><a href="/pages/category.html?category=men">Men</a></li>
           <li><a href="/pages/category.html?category=electronics">Electronics</a></li>
