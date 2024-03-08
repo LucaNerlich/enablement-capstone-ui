@@ -4,7 +4,7 @@ import {updateBadge} from "../basket.js";
  * Loads a block named 'header' into header
  * @param {Element} header header element
  */
-function createHeader(header) {
+async function createHeader(header) {
     header.innerHTML = `
       <ul>
         <li class="logo-name"><a href="/">VENIA</a></li>

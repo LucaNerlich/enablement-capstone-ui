@@ -69,7 +69,7 @@ function clearBasket() {
  *
  * @return {void}
  */
-function updateBadge() {
+async function updateBadge() {
     const numProducts = loadBasket()?.length;
     const badge = document.getElementById("basket-badge").querySelector('a > button');
     if (badge) {
