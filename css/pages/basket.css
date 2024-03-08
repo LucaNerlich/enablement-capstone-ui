@@ -2,3 +2,13 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+#buy-basket {
+    background-color: #1f936b;
+    color: white;
+}
+
+
+#buy-basket:hover {
+    background-color: #197a59;
+}
