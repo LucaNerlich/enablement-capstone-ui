@@ -25,15 +25,15 @@
 
 ## Todos
 
-- [x] Make the product fetchs not render-blocking
 - [ ] Create single product page (by id)
+- [ ] add 'change product amount' in basket
+- [ ] add button "remove from basket"
+- [x] Make the product fetchs not render-blocking
 - [x] On "add to basket" button, write id to local storage
+- [x] calculate and display basket sum
+- [x] content overflows header
 - [x] have basket in header show a count of all ids in local storage
 - [x] load all products by local-storage id in basket page
-- [x] calculate and display basket sum
-- [ ] add button "remove from basket"
-- [ ] add 'change product amount' in basket
-- [x] content overflows header
 
 ## Time spent
 
