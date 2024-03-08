@@ -1,5 +1,6 @@
 import {clearBasket, loadBasketCount} from "../basket.js";
 import {loadData} from "../api.js";
+import {shortenText} from "../util.js";
 
 async function createBasket(main) {
     document.title = "Basket";
@@ -24,18 +25,21 @@ async function createBasket(main) {
         const basketCount = loadBasketCount();
         basketCount.forEach(product => {
             const productListItem = document.createElement('li');
-            const itemSum = getPrice(product.id, products) * product.count;
+            const matchedProduct = getProductById(product.id, products);
+            const itemSum = matchedProduct.price * product.count;
             basketSum += itemSum;
-            productListItem.innerText = product.id + " x" + product.count + " $" + itemSum;
+            productListItem.innerHTML = `
+                <span>${product.count}x <strong>${shortenText(matchedProduct.title, 25)}</strong> | $${itemSum}</span>
+            `
             basketProductList.appendChild(productListItem);
         })
 
         basketSumElement.innerText = "$" + basketSum;
     }
 
-    function getPrice(productId, products) {
-        const product = products.find(p => p.id === productId);
-        return product ? product.price : null;
+
+    function getProductById(productId, products) {
+        return products.find(p => p.id === productId);
     }
 }
 

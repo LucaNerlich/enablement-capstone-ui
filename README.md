@@ -33,7 +33,7 @@
 - [x] calculate and display basket sum
 - [ ] add button "remove from basket"
 - [ ] add 'change product amount' in basket
-- [ ] content overflows header
+- [x] content overflows header
 
 ## Time spent
 
