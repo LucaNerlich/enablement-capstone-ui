@@ -2,12 +2,12 @@ header {
     position: sticky;
     top: 0;
     min-height: 67px;
-    background-color: var(--color-brand);
+    background-color: whitesmoke;
     padding: 1rem 0;
-    color: #ffffff;
+    color: black;
 
     [data-theme="dark"] {
-        color: #000000;
+        /*color: #000000;*/
     }
 }
 
@@ -16,10 +16,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    z-index: 2;
 }
 
 .logo {
     font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+.logo > a > span {
+    color: #336DFF;
 }
 
 .menu-container {
@@ -35,25 +41,18 @@ header {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: black;
     margin: 5px 0;
 }
 
-header > div.menu-container > nav {
-    display: flex;
-    background-color: var(--color-brand);
-}
-
-header > div.menu-container > nav > ul {
+header > nav > ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-header > div.menu-container > nav > ul > li {
+header > nav > ul > li {
     margin: 0 15px;
 }
 
