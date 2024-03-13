@@ -19,7 +19,12 @@ header {
     z-index: 2;
 }
 
+header > a.basket-badge {
+    margin-right: 3rem;
+}
+
 .logo {
+    margin-left: 2rem;
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
 }
@@ -60,13 +65,13 @@ a {
     text-decoration: none;
 }
 
-@media (width > 768px) {
+@media (width > 800px) {
     header > nav > ul > li > a.basket-badge {
         display: none;
     }
 }
 
-@media (width <= 768px) {
+@media (width <= 800px) {
     .hamburger-menu {
         display: block;
     }
