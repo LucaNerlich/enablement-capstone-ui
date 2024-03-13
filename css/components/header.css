@@ -88,13 +88,23 @@ a {
         top: 66px;
         left: 0;
         width: 33%;
-        margin-left: 66%;
+        margin-left: 67%;
         height: 100vw;
     }
 
     header > nav > ul {
         flex-direction: column;
         align-items: flex-end;
+    }
+
+    header > nav > ul > li {
+        width: 100%;
+        text-align: end;
+        padding-right: 10%;
+    }
+
+    header > nav > ul > li:not(:last-child) {
+        border-bottom: 1px solid black;
     }
 
     nav a {
