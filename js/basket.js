@@ -71,10 +71,13 @@ function clearBasket() {
  */
 async function updateBadge() {
     const numProducts = loadBasket()?.length;
-    const badge = document.getElementById("basket-badge").querySelector('a > button');
-    if (badge) {
-        badge.innerText = (numProducts > 0) ? "Basket (" + numProducts + ")" : "Basket";
-    }
+    const basketButtons = document.getElementsByClassName("basket-badge");
+    console.log("basketButtons", basketButtons);
+    [...basketButtons].forEach(anchor => {
+        console.log("anchor", anchor);
+        const button = anchor.querySelector('button');
+        button.innerText = (numProducts > 0) ? "Basket (" + numProducts + ")" : "Basket";
+    })
 }
 
 export {
