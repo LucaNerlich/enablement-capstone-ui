@@ -23,6 +23,8 @@
 - Desktop
     - https://xd.adobe.com/view/a86e4a6b-737b-43e3-ad55-58436da1ca3c-fd3d/
   - https://xd.adobe.com/view/913b6df6-2487-4a3a-bf00-6e919622d75c-c468/screen/70ec167b-4657-4946-abf3-26a6b0dbdf1e/specs/
+- Magento Demo Store
+    - https://venia.magento.com/
 
 ## Todos
 
