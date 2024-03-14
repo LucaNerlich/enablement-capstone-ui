@@ -20,6 +20,17 @@ header > a.basket-badge {
     margin-right: 3rem;
 }
 
+header > nav > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header > nav > ul > li {
+    margin: 0 15px;
+}
+
 .logo {
     margin-left: 2rem;
     font-size: 1.5rem;
@@ -45,17 +56,6 @@ header > a.basket-badge {
     height: 3px;
     background-color: black;
     margin: 5px 0;
-}
-
-header > nav > ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-header > nav > ul > li {
-    margin: 0 15px;
 }
 
 a {
@@ -91,11 +91,6 @@ a {
         margin-left: 67%;
         height: 100vw;
         width: 33%;
-
-        @media (width <= 500px) {
-            margin-left: 45%;
-            width: 55%;
-        }
     }
 
     [data-theme="dark"] header > nav {
@@ -117,10 +112,6 @@ a {
         border-bottom: 1px solid black;
     }
 
-    [data-theme="dark"] header > nav > ul > li:not(:last-child) {
-        border-bottom: 1px solid whitesmoke;
-    }
-
     nav a {
         padding: 10px;
         display: block;
@@ -128,5 +119,15 @@ a {
 
     .menu-container.active nav {
         display: flex;
+    }
+
+    @media (width <= 500px) {
+        header > nav {
+            margin-left: 45%;
+            width: 55%;
+        }
+    }
+    [data-theme="dark"] header > nav > ul > li:not(:last-child) {
+        border-bottom: 1px solid whitesmoke;
     }
 }
