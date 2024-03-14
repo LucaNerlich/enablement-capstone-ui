@@ -3,7 +3,6 @@
 <!-- TOC -->
 * [2024 EDS Enablement Capstone UI](#2024-eds-enablement-capstone-ui)
   * [XD Designs](#xd-designs)
-  * [Todos](#todos)
   * [Time spent](#time-spent)
 <!-- TOC -->
 
@@ -25,18 +24,6 @@
   - https://xd.adobe.com/view/913b6df6-2487-4a3a-bf00-6e919622d75c-c468/screen/70ec167b-4657-4946-abf3-26a6b0dbdf1e/specs/
 - Magento Demo Store
     - https://venia.magento.com/
-
-## Todos
-
-- [ ] Create single product page (by id)
-- [ ] add 'change product amount' in basket
-- [ ] add button "remove from basket"
-- [x] Make the product fetchs not render-blocking
-- [x] On "add to basket" button, write id to local storage
-- [x] calculate and display basket sum
-- [x] content overflows header
-- [x] have basket in header show a count of all ids in local storage
-- [x] load all products by local-storage id in basket page
 
 ## Time spent
 
