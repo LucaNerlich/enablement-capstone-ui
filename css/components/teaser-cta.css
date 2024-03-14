@@ -26,6 +26,7 @@
         width: 50%;
         overflow: hidden;
         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
 
         img {
             width: 100%;
