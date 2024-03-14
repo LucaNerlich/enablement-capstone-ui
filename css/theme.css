@@ -30,3 +30,27 @@ body {
     background-color: var(--background);
     color: var(--color-text);
 }
+
+#theme-switcher {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+[data-theme="dark"] #theme-switcher > svg.theme-light {
+    display: inline-block;
+    fill: whitesmoke;
+}
+
+[data-theme="light"] #theme-switcher > svg.theme-light {
+    display: none;
+}
+
+[data-theme="dark"] #theme-switcher > svg.theme-dark {
+    display: none;
+}
+
+[data-theme="light"] #theme-switcher > svg.theme-dark {
+    display: inline-block;
+    fill: black;
+}
