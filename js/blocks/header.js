@@ -19,13 +19,13 @@ async function createHeader(header) {
     <li><a href="/pages/category.html">All</a></li>
     <li>
       <a class="basket-badge" href="/pages/basket.html">
-        <button>BASKET</button>
+
       </a>
     </li>
   </ul>
 </nav>
 <a class="basket-badge" href="/pages/basket.html">
-  <button>BASKET</button>
+
 </a>
 <div class="hamburger-menu">
   <div class="bar"></div>

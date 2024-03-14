@@ -16,8 +16,17 @@ header {
     color: whitesmoke;
 }
 
+header svg {
+    display: inline-block;
+}
+
+[data-theme="dark"] header svg {
+    fill: whitesmoke;
+}
+
 header > a.basket-badge {
     margin-right: 3rem;
+    background-color: unset;
 }
 
 header > nav > ul {
