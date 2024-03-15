@@ -29,6 +29,15 @@ header > a.basket-badge {
     background-color: unset;
 }
 
+header > a.basket-badge > svg {
+    vertical-align: top;
+}
+
+header > a.basket-badge > span,
+header > a.basket-badge > strong {
+    vertical-align: middle;
+}
+
 header > nav > ul {
     list-style: none;
     display: flex;
