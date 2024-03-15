@@ -29,15 +29,20 @@ async function createProductTeaser(product) {
     const productTeaser = document.createElement("div");
     productTeaser.classList.add("product-teaser");
 
+    const anchor = document.createElement('a');
+    anchor.href = `/pages/product.html?pid=${product.id}`
+    const headlineAnchor = anchor.cloneNode();
     const image = document.createElement("img");
     image.src = product.image;
     image.alt = product.title;
     image.loading = "lazy";
-    productTeaser.appendChild(image);
+    anchor.appendChild(image);
+    productTeaser.appendChild(anchor);
 
     const title = document.createElement("h3");
     title.textContent = product.title;
-    productTeaser.appendChild(title);
+    headlineAnchor.appendChild(title)
+    productTeaser.appendChild(headlineAnchor);
 
     const price = document.createElement("span");
     price.classList.add('price');

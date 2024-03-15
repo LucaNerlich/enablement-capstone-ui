@@ -22,8 +22,9 @@
     }
 }
 
-.product-teaser > h3 {
+.product-teaser > a > h3 {
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .product-teaser > .price {
