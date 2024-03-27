@@ -37,3 +37,5 @@
     - 3h
     - basket via local-storage
     - mobile header
+- 2024-03-13
+    - use icons
